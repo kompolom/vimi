@@ -58,9 +58,9 @@ set nocompatible
         " Mappings to easily delete, change and add surroundings in pairs
         " Bundle 'git://github.com/tpope/vim-surround.git'
         " Git wrapper
-        " Bundle 'git://github.com/tpope/vim-fugitive.git'
+         Bundle 'git://github.com/tpope/vim-fugitive.git'
         " Bundle 'git://github.com/tsaleh/vim-align.git'
-        " Bundle 'git://github.com/vim-scripts/bufexplorer.zip.git'
+         Bundle 'git://github.com/vim-scripts/bufexplorer.zip.git'
         " Automatic closing of quotes, parenthesis, brackets, etc.
         " Bundle 'git://github.com/vim-scripts/delimitMate.vim.git'
         " Bundle 'git://github.com/sjl/gundo.vim.git'
@@ -82,7 +82,7 @@ set nocompatible
         Bundle 'git://github.com/hokaccha/vim-html5validator.git'
         " Bundle 'git://github.com/tyru/operator-html-escape.vim.git'
         " Runtime files for Haml and Sass
-        Bundle 'git://github.com/tpope/vim-haml.git'
+        "Bundle 'git://github.com/tpope/vim-haml.git'
         Bundle 'git://github.com/gregsexton/MatchTag.git'
     " CSS/LESS
         " CSS3 syntax support
@@ -98,8 +98,8 @@ set nocompatible
         " Syntax for jQuery keywords and css selectors
         Bundle 'git://github.com/itspriddle/vim-jquery.git'
         " CoffeeScript support
-        Bundle 'git://github.com/kchmck/vim-coffee-script.git'
-        Bundle 'git://github.com/walm/jshint.vim.git'
+        "Bundle 'git://github.com/kchmck/vim-coffee-script.git'
+        "Bundle 'git://github.com/walm/jshint.vim.git'
     " JSON
         Bundle 'git://github.com/leshill/vim-json.git'
     " PHP
@@ -117,7 +117,7 @@ set nocompatible
         " Wisely add "end" in ruby, endfunction/endif/more
         " Bundle 'git://github.com/tpope/vim-endwise.git'
     " Jade
-        Bundle 'git://github.com/digitaltoad/vim-jade.git'
+        "Bundle 'git://github.com/digitaltoad/vim-jade.git'
     " Stylus
         Bundle 'git://github.com/wavded/vim-stylus.git'
 
