@@ -59,6 +59,7 @@ set nocompatible
         " Bundle 'git://github.com/tpope/vim-surround.git'
         " Git wrapper
          Bundle 'git://github.com/tpope/vim-fugitive.git'
+         Bundle 'git://github.com/airblade/vim-gitgutter.git'
         " Bundle 'git://github.com/tsaleh/vim-align.git'
          Bundle 'git://github.com/vim-scripts/bufexplorer.zip.git'
         " Automatic closing of quotes, parenthesis, brackets, etc.
@@ -99,7 +100,7 @@ set nocompatible
         Bundle 'git://github.com/itspriddle/vim-jquery.git'
         " CoffeeScript support
         "Bundle 'git://github.com/kchmck/vim-coffee-script.git'
-        "Bundle 'git://github.com/walm/jshint.vim.git'
+        Bundle 'git://github.com/walm/jshint.vim.git'
     " JSON
         Bundle 'git://github.com/leshill/vim-json.git'
     " PHP
@@ -108,7 +109,7 @@ set nocompatible
     " Python/Django
         "Bundle 'git://github.com/fs111/pydoc.vim.git'
     " Perl
-        Bundle 'git://github.com/petdance/vim-perl.git'
+        "Bundle 'git://github.com/petdance/vim-perl.git'
     " Ruby/Rails
         " Editing and compiling Ruby
         " Bundle 'git://github.com/vim-ruby/vim-ruby.git'
