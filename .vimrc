@@ -46,7 +46,7 @@ set nocompatible
         " Bundle 'git://github.com/rphillips/vim-zoomwin.git'
         Bundle 'git://github.com/mattn/emmet-vim.git'
         " TextMate-like snippets
-        Bundle 'git://github.com/vim-scripts/UltiSnips.git'
+        "Bundle 'git://github.com/vim-scripts/UltiSnips.git'
         " TextMate-like snippets
         " Bundle 'git://github.com/msanders/snipmate.vim.git'
         " Miripiruni's XSLT & CSS snippets
@@ -606,8 +606,8 @@ set nocompatible
         " vnoremap <Space> zf
 
     " Switch tabs with <Tab>
-        nnoremap <Tab> gt
-        nnoremap <S-Tab> gT
+        "nnoremap <Tab> gt
+        "nnoremap <S-Tab> gT
 
     " Ремапим русские символы
         " set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
@@ -666,13 +666,13 @@ set nocompatible
     au VimResized * exe "normal! \<c-w>="
 
 " File specific
-    autocmd BufNewFile *.py 0r ~/.vimi/templates/template.py
-    autocmd BufNewFile *.xml 0r ~/.vimi/templates/template.xml
-    autocmd BufNewFile *.xsl 0r ~/.vimi/templates/template.xsl
-    autocmd BufNewFile *.jade 0r ~/.vimi/templates/template.jade
+    "autocmd BufNewFile *.py 0r ~/.vimi/templates/template.py
+    "autocmd BufNewFile *.xml 0r ~/.vimi/templates/template.xml
+    "autocmd BufNewFile *.xsl 0r ~/.vimi/templates/template.xsl
+    "autocmd BufNewFile *.jade 0r ~/.vimi/templates/template.jade
     autocmd BufNewFile *.html 0r ~/.vimi/templates/template.html
 
-    autocmd FileType jade setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+    "autocmd FileType jade setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Plugins
 
@@ -697,7 +697,7 @@ set nocompatible
         nnoremap <Bs> :<C-u>NERDTreeToggle<CR>
         let NERDTreeShowBookmarks=1
         let NERDTreeChDirMode=2
-        let NERDTreeQuitOnOpen=1
+        let NERDTreeQuitOnOpen=0
         let NERDTreeShowHidden=1
         let NERDTreeKeepTreeInNewTab=0
         " Disable display of the 'Bookmarks' label and 'Press ? for help' text
@@ -721,9 +721,9 @@ set nocompatible
           \}
 
     " UltiSnips
-        let g:UltiSnipsExpandTrigger="<tab>"
-        let g:UltiSnipsJumpForwardTrigger="<tab>"
-        let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+        "let g:UltiSnipsExpandTrigger="<tab>"
+        "let g:UltiSnipsJumpForwardTrigger="<tab>"
+        "let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
     " VimWiki
-        let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/'}]
+        let g:vimwiki_list = [{'path': '~/Yandex.Disk/vimwiki/'}]
