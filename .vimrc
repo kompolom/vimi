@@ -28,6 +28,7 @@ set nocompatible
         " For FuzzyFinder:
         " Bundle 'L9'
     " Interface
+        Plugin 'bling/vim-airline'
         Bundle 'git://github.com/kien/ctrlp.vim.git'
         " Solarized Colorscheme
         Bundle 'git://github.com/altercation/vim-colors-solarized.git'
@@ -733,3 +734,7 @@ set nocompatible
     " Fugitive settings
         map <Leader>gs <Esc>:Gstatus<CR>
         map <Leader>gd <Esc>:Gdiff<CR>
+
+    " Airline
+     let g:airline_powerline_fonts = 1
+     set guifont=Dejavu\ Sans\ Mono\ for\ Powerline 
