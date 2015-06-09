@@ -274,6 +274,8 @@ set nocompatible
     set statusline+=\ \ 
     " Paste mode flag
     set statusline+=%{&paste?'[paste]\ ':''}
+    " Git status
+    set statusline+=%{fugitive#statusline()}
     " File encoding
     set statusline+=%{&fileencoding}
     " Type of file
@@ -466,14 +468,14 @@ set nocompatible
 
     " Disable <Arrow keys>
         " Warning: nightmare mode!
-        inoremap <Up> <NOP>
-        inoremap <Down> <NOP>
-        inoremap <Left> <NOP>
-        inoremap <Right> <NOP>
-        noremap <Up> <NOP>
-        noremap <Down> <NOP>
-        noremap <Left> <NOP>
-        noremap <Right> <NOP>
+        "inoremap <Up> <NOP>
+        "inoremap <Down> <NOP>
+        "inoremap <Left> <NOP>
+        "inoremap <Right> <NOP>
+        "noremap <Up> <NOP>
+        "noremap <Down> <NOP>
+        "noremap <Left> <NOP>
+        "noremap <Right> <NOP>
         " Navigate with <Ctrl>-hjkl in Insert mode
         inoremap <C-h> <C-o>h
         inoremap <C-j> <C-o>j
@@ -696,10 +698,10 @@ set nocompatible
     " NERDTree
         nnoremap <Bs> :<C-u>NERDTreeToggle<CR>
         let NERDTreeShowBookmarks=1
-        let NERDTreeChDirMode=2
+        let NERDTreeChDirMode=1
         let NERDTreeQuitOnOpen=0
-        let NERDTreeShowHidden=1
-        let NERDTreeKeepTreeInNewTab=0
+        let NERDTreeShowHidden=0
+        let NERDTreeKeepTreeInNewTab=1
         " Disable display of the 'Bookmarks' label and 'Press ? for help' text
         let NERDTreeMinimalUI=1
         " Use arrows instead of + ~ chars when displaying directories
@@ -727,3 +729,7 @@ set nocompatible
 
     " VimWiki
         let g:vimwiki_list = [{'path': '~/Yandex.Disk/vimwiki/'}]
+
+    " Fugitive settings
+        map <Leader>gs <Esc>:Gstatus<CR>
+        map <Leader>gd <Esc>:Gdiff<CR>
