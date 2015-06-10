@@ -31,8 +31,10 @@ set nocompatible
         Plugin 'bling/vim-airline'
         Bundle 'git://github.com/kien/ctrlp.vim.git'
         " Solarized Colorscheme
-        Bundle 'git://github.com/altercation/vim-colors-solarized.git'
-        Bundle 'git://github.com/gorodinskiy/vim-coloresque.git'
+        "Bundle 'git://github.com/altercation/vim-colors-solarized.git'
+        "Bundle 'git://github.com/gorodinskiy/vim-coloresque.git'
+        Bundle 'git://github.com/ajh17/Spacegray.vim.git'
+
         " A tree explorer plugin
         Bundle 'git://github.com/scrooloose/nerdtree.git'
         " Perform all your vim insert mode completions with Tab
@@ -78,6 +80,9 @@ set nocompatible
         " Bundle 'git://github.com/rkowal/Lua-Omni-Vim-Completion.git'
         " Bundle 'git://github.com/xolox/vim-lua-ftplugin.git'
         " Bundle 'git://github.com/xolox/vim-lua-inspect.git'
+    " Markdown
+        Plugin 'godlygeek/tabular'
+        Plugin 'plasticboy/vim-markdown'
     " HTML/HAML
         " HTML5 omnicomplete and syntax
         Bundle 'git://github.com/othree/html5.vim.git'
@@ -682,12 +687,12 @@ set nocompatible
     " Solarized
         syntax enable
         " http://stackoverflow.com/questions/7278267/incorrect-colors-with-vim-in-iterm2-using-solarized#comment11144700_7278548
-        let g:solarized_termcolors=16
+        "let g:solarized_termcolors=16
         set background=dark
         try
-            colorscheme solarized
+            colorscheme spacegray
         catch /^Vim\%((\a\+)\)\=:E185/
-            echo "Solarized theme not found. Run :BundleInstall"
+            "echo "Solarized theme not found. Run :BundleInstall"
         endtry
 
         try
