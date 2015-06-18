@@ -31,8 +31,8 @@ set nocompatible
         Plugin 'bling/vim-airline'
         Bundle 'git://github.com/kien/ctrlp.vim.git'
         " Solarized Colorscheme
-        "Bundle 'git://github.com/altercation/vim-colors-solarized.git'
-        "Bundle 'git://github.com/gorodinskiy/vim-coloresque.git'
+        Bundle 'git://github.com/altercation/vim-colors-solarized.git'
+        Bundle 'git://github.com/gorodinskiy/vim-coloresque.git'
         Bundle 'git://github.com/ajh17/Spacegray.vim.git'
 
         " A tree explorer plugin
@@ -241,7 +241,7 @@ set nocompatible
 
     " No beeps, no flashes
     set visualbell
-    set t_vb=
+    set t_vb= 
     " List of directories which will be searched when using :find, gf, etc.
     " Search relative to the directory of the current file
     " Search in the current directory
@@ -687,19 +687,24 @@ set nocompatible
     " Solarized
         syntax enable
         " http://stackoverflow.com/questions/7278267/incorrect-colors-with-vim-in-iterm2-using-solarized#comment11144700_7278548
-        "let g:solarized_termcolors=16
+        let g:solarized_termcolors=16
         set background=dark
-        try
-            colorscheme spacegray
-        catch /^Vim\%((\a\+)\)\=:E185/
-            "echo "Solarized theme not found. Run :BundleInstall"
-        endtry
+        if has('gui_running')
+            try
+                colorscheme solarized
+            catch /^Vim\%((\a\+)\)\=:E185/
+                echo "Solarized theme not found. Run :BundleInstall"
+            endtry
 
-        try
-            call togglebg#map("<Leader>b")
-        catch /^Vim\%((\a\+)\)\=:E117/
-            " :(
-        endtry
+            try
+                call togglebg#map("<Leader>b")
+            catch /^Vim\%((\a\+)\)\=:E117/
+                " :(
+            endtry
+        else
+            colorscheme spacegray
+        endif
+
 
     " NERDTree
         nnoremap <Bs> :<C-u>NERDTreeToggle<CR>
