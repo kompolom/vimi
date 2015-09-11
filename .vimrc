@@ -47,7 +47,7 @@ set nocompatible
         " Shows 'Nth match out of M' at every search
         Bundle 'git://github.com/vim-scripts/IndexedSearch.git'
         " Bundle 'git://github.com/rphillips/vim-zoomwin.git'
-        Bundle 'git://github.com/mattn/emmet-vim.git'
+        "Bundle 'git://github.com/mattn/emmet-vim.git'
         " TextMate-like snippets
         "Bundle 'git://github.com/vim-scripts/UltiSnips.git'
         " TextMate-like snippets
@@ -64,12 +64,12 @@ set nocompatible
          Bundle 'git://github.com/tpope/vim-fugitive.git'
          Bundle 'git://github.com/airblade/vim-gitgutter.git'
         " Bundle 'git://github.com/tsaleh/vim-align.git'
-         Bundle 'git://github.com/vim-scripts/bufexplorer.zip.git'
+        " Bundle 'git://github.com/vim-scripts/bufexplorer.zip.git'
         " Automatic closing of quotes, parenthesis, brackets, etc.
         " Bundle 'git://github.com/vim-scripts/delimitMate.vim.git'
         " Bundle 'git://github.com/sjl/gundo.vim.git'
         " Bundle 'git://github.com/edsono/vim-matchit.git'
-        Bundle 'git://github.com/sjl/threesome.vim.git'
+        "Bundle 'git://github.com/sjl/threesome.vim.git'
         " Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
         " Bundle 'git://github.com/slack/vim-fuzzyfinder.git'
         Bundle 'git://github.com/vim-scripts/vimwiki.git'
@@ -96,9 +96,9 @@ set nocompatible
         Bundle 'git://github.com/hail2u/vim-css3-syntax.git'
         " Highlight colors in css files
         Bundle 'git://github.com/ap/vim-css-color.git'
-        Bundle 'git://github.com/groenewege/vim-less.git'
+        "Bundle 'git://github.com/groenewege/vim-less.git'
         Bundle 'git://github.com/miripiruni/vim-better-css-indent.git'
-        Bundle 'git://github.com/miripiruni/CSScomb-for-Vim.git'
+        "Bundle 'git://github.com/miripiruni/CSScomb-for-Vim.git'
     " JavaScript
         " Vastly improved vim's javascript indentation
         Bundle 'git://github.com/pangloss/vim-javascript.git'
@@ -110,7 +110,7 @@ set nocompatible
     " JSON
         Bundle 'git://github.com/leshill/vim-json.git'
     " PHP
-        Bundle 'git://github.com/vim-scripts/php.vim--Garvin.git'
+        "Bundle 'git://github.com/vim-scripts/php.vim--Garvin.git'
         Bundle 'git://github.com/2072/PHP-Indenting-for-VIm.git'
     " Python/Django
         "Bundle 'git://github.com/fs111/pydoc.vim.git'
@@ -373,7 +373,7 @@ set nocompatible
 
     " ,m
         " Toggle mouse support in Normal mode
-        set mouse=
+        set mouse=a
         function! ToggleMouse()
           if &mouse == 'a'
             set mouse=
@@ -663,7 +663,7 @@ set nocompatible
         "     \ execute "source " . $HOME . "/.vim/Session.vim"
 
     " Auto change the directory to the current file I'm working on
-    autocmd BufEnter * lcd %:p:h
+    "autocmd BufEnter * lcd %:p:h
 
     " Save on losing focus
     " Only available for GUI
@@ -744,6 +744,8 @@ set nocompatible
     " Fugitive settings
         map <Leader>gs <Esc>:Gstatus<CR>
         map <Leader>gd <Esc>:Gdiff<CR>
+        map dg <Esc>:diffget<CR>
+        map dp <Esc>:diffput<CR>
 
     " Airline
      let g:airline_powerline_fonts = 1
