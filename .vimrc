@@ -128,6 +128,9 @@ set nocompatible
     " Stylus
         Bundle 'git://github.com/wavded/vim-stylus.git'
 
+    " .editorconfig support
+        Plugin 'editorconfig/editorconfig-vim'
+
     filetype plugin indent on     " required!
 
 " Interface
@@ -279,7 +282,7 @@ set nocompatible
     set statusline+=%m
     set statusline+=\ \ 
     " Paste mode flag
-    set statusline+=%{&paste?'[paste]\ ':''}
+    "set statusline+=%{&paste?'[paste]\ ':''}
     " Git status
     set statusline+=%{fugitive#statusline()}
     " File encoding
@@ -411,7 +414,7 @@ set nocompatible
         " Switch type of line numbers
         " http://stackoverflow.com/questions/4387210/vim-how-to-map-two-tasks-under-one-shortcut-key
         " Vim 7.3 required
-        let g:relativenumber = 0
+        let g:relativenumber = 2
         function! ToogleRelativeNumber()
           if g:relativenumber == 0
             let g:relativenumber = 1
@@ -748,5 +751,6 @@ set nocompatible
         map dp <Esc>:diffput<CR>
 
     " Airline
+     let g:airline_section_y = 'BN: %{bufnr("%")}'
      let g:airline_powerline_fonts = 1
-     set guifont=Dejavu\ Sans\ Mono\ for\ Powerline 
+     set guifont=Dejavu\ Sans\ Mono\ for\ Powerline
